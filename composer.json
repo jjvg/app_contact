@@ -1,0 +1,14 @@
+{
+    "name": "prueba de alegra",
+    "description": "Aplicación para proceso de selección de Alegra.com, implementado Ext.js 4.2 para el frontend y Zend Framework 1.12 para backend, comunicándose con el API de Alegra.com",
+    "type": "project",
+    "require": {
+        "zendframework/zendframework1": "^1.12"
+    },
+    "authors": [
+        {
+            "name": "Jose Vaamonde",
+            "email": "jose120293@gmail.com"
+        }
+    ]
+}

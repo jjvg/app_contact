@@ -1,0 +1,82 @@
+<div id="hints-wrapper">
+</div>
+<div class="section-wrapper">
+    <div class="header">
+        <div class="title">
+            <h1><?= $this->contactDetail->name; ?></h1>
+        </div>
+        <div class="actions">
+            <a class="button2 add" href="/invoice/add/idClient/5">Crear cuenta de cobro</a>
+            <a class="button2 add" href="/bill/add/idClient/5">Crear factura de compra</a>
+            <a class="button2 edit" href="/client/edit/id/5">Editar</a>
+            <div id="moreActionsButton" style="display:inline-block">
+                <div class="x-btn button2 x-unselectable x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon" style="padding:1px 5px 8px 5px;border-width:1px;" id="ext-comp-1036">
+                    <div id="ext-comp-1036-btnWrap" class="x-btn-wrap x-btn-split x-btn-split-right" unselectable="on"><a id="ext-comp-1036-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on" tabindex="0"><span id="ext-comp-1036-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Más acciones</span><span role="img" id="ext-comp-1036-btnIconEl" class="x-btn-icon-el  " unselectable="on" style=""></span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content"></div>
+</div>
+<div id="viewClientInfo" style="float: left; margin-bottom: 20px;">
+    <table class="table-details-vertical gray-header">
+        <tbody>
+            <tr>
+                <th>
+                    Datos generales
+                </th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td><?= $this->contactDetail->name; ?></td>
+            </tr>
+            <tr>
+                <td>RIF</td>
+                <td><?= $this->contactDetail->identification; ?></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td><?= $this->contactDetail->phonePrimary; ?></td>
+            </tr>
+            <tr>
+                <td>Teléfono 2</td>
+                <td><?= $this->contactDetail->phoneSecondary; ?></td>
+            </tr>
+            <tr>
+                <td>Celular</td>
+                <td><?= $this->contactDetail->mobile; ?></td>
+            </tr>
+            <tr>
+                <td>Dirección</td>
+                <td><?= $this->contactDetail->address->address;  ?></td>
+            </tr>
+            <tr>
+                <td>Ciudad</td>
+                <td><?= $this->contactDetail->address->city; ?></td>
+            </tr>
+            <tr>
+                <td>Correo electrónico</td>
+                <td><?= $this->contactDetail->email; ?></td>
+            </tr>
+            <tr>
+                <td>Observaciones</td>
+                <td><?= $this->contactDetail->observations; ?></td>
+            </tr>
+            <tr>
+                <td>Archivos adjuntos</td>
+                <td>
+                    <a class="uploadFile" href="#" data-idtype="5" data-type="client" data-canupload="yes" id="ext-gen1081">Adjuntar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Enlace estado de cuenta</td>
+                <td id="statementLink">
+                    <div class="btn-view x-unselectable btn-view-default-small x-noicon btn-view-noicon btn-view-default-small-noicon" style="text-decoration:underline;cursor:pointer;border-width:1px;width:45px;" id="button-1038">
+                        <div id="button-1038-btnWrap" class="btn-view-wrap" unselectable="on"><a id="button-1038-btnEl" class="btn-view-button" role="button" hidefocus="on" unselectable="on" tabindex="0"><span id="button-1038-btnInnerEl" class="btn-view-inner btn-view-inner-center" unselectable="on">Generar</span><span role="img" id="button-1038-btnIconEl" class="btn-view-icon-el  " unselectable="on" style=""></span></a></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
